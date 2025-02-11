@@ -1,0 +1,90 @@
+/* Header container */
+#header {
+    background-color: #0C0F14;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Centering and spacing */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo-wrapper {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Navigation links */
+.nav-menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-menu-wrapper a {
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu-wrapper a:hover {
+    color: #ffbe0b; /* Marigold color */
+}
+
+/* Authentication buttons */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: background 0.3s ease-in-out;
+}
+
+.auth-buttons a:hover {
+    background: white;
+    color: #0C0F14;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-menu-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
